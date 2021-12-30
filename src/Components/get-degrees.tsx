@@ -31,6 +31,7 @@ function GetDegrees() {
 
         if (name1.name === name2.name) {
             alert("Person cannot be same");
+            setButtonClicked(0);
             return;
         }
         let flag1: Boolean = false, flag2: Boolean = false;
@@ -44,6 +45,7 @@ function GetDegrees() {
         }
         if (!flag1 || !flag2) {
             alert("Person does not exist");
+            setButtonClicked(0);
             return;
         }
 
